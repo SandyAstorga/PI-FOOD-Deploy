@@ -18,6 +18,7 @@
 .mynavbar {
     background-color: #e26d5c;
     height: 100px;
+    position: relative;
 }
 .container_search {
     display: flex;
@@ -42,6 +43,9 @@
     padding: 0 !important;
 }
 .icon_menu{
+    display: none;
+}
+.responsive_menu{
     display: none;
 }
 /* Aplica a todos los botones de mis componentes*/
@@ -84,5 +88,17 @@ button {
     }
     .mynavbar {
         height: 70px;
+    }
+    .responsive_menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background: #e26d5c;
+        width: 70%;
+        height: 250px;
+        right: 0;
     }
 }
